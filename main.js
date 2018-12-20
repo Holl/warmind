@@ -4,6 +4,7 @@ var roleBuilder = require('role.builder');
 var scan = require('mind.scan');
 
 module.exports.loop = function () {
+    scan();
 
     for(var name in Game.creeps) {
         var creep = Game.creeps[name];
